@@ -1,0 +1,83 @@
+/*#image {
+
+    position: center;
+    -webkit-animation-name: image;
+    -webkit-animation-duration: 4s infinite;
+    -webkit-animation-delay: 2s;
+    animation-name: image;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}*/
+div {
+  position: absolute;
+}
+
+@keyframes img1 {
+0% {opacity:0;}
+45% {opacity:1;}
+55% {opacity:0;}
+100% {opacity:0;}
+}
+@keyframes img2 {
+0% {opacity:0;}
+45% {opacity:0;}
+55% {opacity:1;}
+100% {opacity:0;}
+}
+@keyframes img3 {
+0% {opacity:0;}
+45% {opacity:0;}
+55% {opacity:0;}
+100% {opacity:1;}
+}
+
+.img1{
+  animation: img1 1s linear 0s infinite;
+}
+
+.img2{
+  animation: img2 1s linear 1s infinite;
+}
+
+.img3{
+  animation: img3 1s linear 2s infinite;
+}
+
+
+/*#image img1  {
+  animation:
+}
+#image img2 {
+  animation-delay: 4s;
+}
+#image img3 {
+  animation-delay: 2s;
+}*/
+
+
+
+
+@-webkit-keyframes swing {
+    0%   {transform: rotate(10deg);left:0px; top:0px;}
+    25%  {transform: rotate(-5deg);left:2px; top:0px;}
+    50%  {transform: rotate(10deg);left:2px; top:2px;}
+    75%  {transform: rotate(-5deg);left:0px; top:2px;}
+    100% {transform: rotate(10deg);left:0px; top:0px;}
+}
+
+
+@keyframes swing2 {
+    0%   {transform: rotate(10deg);right:0px; top:0px;}
+    25%  {transform: rotate(-5deg);right:2px; top:0px;}
+    50%  {transform: rotate(10deg);right:2px; top:2px;}
+    75%  {transform: rotate(-5deg);right:0px; top:2px;}
+    100% {transform: rotate(10deg);right:0px; top:0px;}
+}
+
+#image {
+  animation: swing 4s ease-in infinite alternate;
+}
+
+/*#image {
+  animation: swing2 4s ease-in 4s infinite;
+}*/

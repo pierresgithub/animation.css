@@ -1,0 +1,37 @@
+/*div {
+
+    position: relative;
+    margin-left: 300px;
+    -webkit-animation-name: image;
+    -webkit-animation-duration: 4s infinite;
+    -webkit-animation-delay: 2s;
+    animation-name: image;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}*/
+
+
+div {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes image {
+    0%   {transform: rotate(10deg);left:0px; top:0px;}
+    25%  {transform: rotate(-5deg);left:2px; top:0px;}
+    50%  {transform: rotate(10deg);left:2px; top:2px;}
+    75%  {transform: rotate(-5deg);left:0px; top:2px;}
+    100% {transform: rotate(10deg);left:0px; top:0px;}
+}
+
+
+@keyframes image {
+    0%   {transform: rotate(10deg);left:0px; top:0px;}
+    25%  {transform: rotate(-5deg);left:2px; top:0px;}
+    50%  {transform: rotate(10deg);left:2px; top:2px;}
+    75%  {transform: rotate(-5deg);left:0px; top:2px;}
+    100% {transform: rotate(10deg);left:0px; top:0px;}
+}
